@@ -1,0 +1,18 @@
+using System.ComponentModel.Design;
+
+Random random = new Random();
+int numeroAle = random.Next(1, 11);
+
+Console.WriteLine("Tente adivinhar o número que o computador escolheu de 1 á 10");
+numeroAle = Convert.ToInt32(Console.ReadLine());
+
+if(numeroAle == 8)
+{
+    Console.WriteLine("Parabéns você acertou em cheio");
+
+}
+
+else
+{
+    Console.WriteLine("Você errou, o número que o computador escolheu foi 8");
+}
